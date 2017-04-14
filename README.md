@@ -10,19 +10,13 @@
 </p>
 
 # **S**oftebd - The Missing Laravel Admin
-Made with ❤️ by [The Control Group](https://www.thecontrolgroup.com)
+Made with ❤️ by [Md Shohanur Rahman](https://www.softwarebd.ml.com)
 
 ![Softebd Screenshot](https://raw.githubusercontent.com/the-control-group/voyager/gh-pages/images/screenshot.png)
 
-Website & Documentation: https://the-control-group.github.io/voyager/
+Website & Documentation: https://softwarebd.github.io/Softbd/
 
-Video Demo Here: https://devdojo.com/series/laravel-voyager-010/
-
-Join our Slack chat: https://voyager-slack-invitation.herokuapp.com/
-
-View the Softbd Cheat Sheet: https://voyager-cheatsheet.ulties.com/
-
-Recent Video on Larachat Live with Voyager: https://larachat.co/live
+Join our Slack chat: https://softwarebd.herokuapp.com/
 
 <hr>
 
