@@ -9,10 +9,10 @@
 <a href="https://github.com/larapack/awesome-voyager"><img src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" alt="Awesome Voyager"></a>
 </p>
 
-# **V**oyager - The Missing Laravel Admin
+# **S**oftebd - The Missing Laravel Admin
 Made with ❤️ by [The Control Group](https://www.thecontrolgroup.com)
 
-![Voyager Screenshot](https://raw.githubusercontent.com/the-control-group/voyager/gh-pages/images/screenshot.png)
+![Softebd Screenshot](https://raw.githubusercontent.com/the-control-group/voyager/gh-pages/images/screenshot.png)
 
 Website & Documentation: https://the-control-group.github.io/voyager/
 
@@ -20,7 +20,7 @@ Video Demo Here: https://devdojo.com/series/laravel-voyager-010/
 
 Join our Slack chat: https://voyager-slack-invitation.herokuapp.com/
 
-View the Voyager Cheat Sheet: https://voyager-cheatsheet.ulties.com/
+View the Softbd Cheat Sheet: https://voyager-cheatsheet.ulties.com/
 
 Recent Video on Larachat Live with Voyager: https://larachat.co/live
 
@@ -28,10 +28,10 @@ Recent Video on Larachat Live with Voyager: https://larachat.co/live
 
 Laravel Admin & BREAD System (Browse, Read, Edit, Add, & Delete), made for Laravel 5.3.
 
-After creating your new Laravel application you can include the Voyager package with the following command: 
+After creating your new Laravel application you can include the Softwarebd package with the following command: 
 
 ```bash
-composer require tcg/voyager
+composer require sbd/softbd
 ```
 
 Next make sure to create a new database and add your database credentials to your .env file:
@@ -49,7 +49,7 @@ You will also want to update your website URL inside of the `APP_URL` variable i
 APP_URL=http://localhost:8000
 ```
 
-Add the Voyager service provider to the `config/app.php` file in the `providers` array:
+Add the Softbd service provider to the `config/app.php` file in the `providers` array:
 
 ```php
 'providers' => [
@@ -57,7 +57,7 @@ Add the Voyager service provider to the `config/app.php` file in the `providers`
     //...
     
     // Package Service Providers
-    TCG\Voyager\VoyagerServiceProvider::class,
+    SBD\Softbd\SoftbdServiceProvider::class,
     // ...
     
     // Application Service Providers
@@ -65,19 +65,19 @@ Add the Voyager service provider to the `config/app.php` file in the `providers`
 ],
 ```
 
-Lastly, we can install voyager. You can do this either with or without dummy data.
+Lastly, we can install softbd. You can do this either with or without dummy data.
 The dummy data will include 1 admin account (if no users already exists), 1 demo page, 4 demo posts, 2 categories and 7 settings.
 
 To install Voyager without dummy simply run
 
 ```bash
-php artisan voyager:install
+php artisan softbd:install
 ```
 
 If you prefer installing it with dummy run
 
 ```bash
-php artisan voyager:install --with-dummy
+php artisan softbd:install --with-dummy
 ```
 
 > Troubleshooting: **Specified key was too long error**. If you see this error message you have an outdated version of MySQL, use the following solution: https://laravel-news.com/laravel-5-4-key-too-long-error
@@ -97,13 +97,13 @@ If you did not go with the dummy user, you may wish to assign admin priveleges t
 This can easily be done by running this command:
 
 ```bash
-php artisan voyager:admin your@email.com
+php artisan softbd:admin your@email.com
 ```
 
 If you did not install the dummy data and you wish to create a new admin user you can pass the `--create` flag, like so:
 
 ```bash
-php artisan voyager:admin your@email.com --create
+php artisan softbd:admin your@email.com --create
 ```
 
 And you will be prompted for the users name and password.
