@@ -1,0 +1,634 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "softbd";
+  src:url("fonts/softbd.eot");
+  src:url("fonts/softbd.eot?#iefix") format("embedded-opentype"),
+    url("fonts/softbd.woff") format("woff"),
+    url("fonts/softbd.ttf") format("truetype"),
+    url("fonts/softbd.svg#softbd") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "softbd" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="softbd-"]:before,
+[class*=" softbd-"]:before {
+  font-family: "softbd" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.softbd-bread:before {
+  content: "\61";
+}
+.softbd-helm:before {
+  content: "\62";
+}
+.softbd-play:before {
+  content: "\63";
+}
+.softbd-activity:before {
+  content: "\64";
+}
+.softbd-company:before {
+  content: "\65";
+}
+.softbd-file-text:before {
+  content: "\66";
+}
+.softbd-folder:before {
+  content: "\67";
+}
+.softbd-paw:before {
+  content: "\68";
+}
+.softbd-sort:before {
+  content: "\6f";
+}
+.softbd-sort-asc:before {
+  content: "\70";
+}
+.softbd-sort-desc:before {
+  content: "\71";
+}
+.softbd-handle:before {
+  content: "\6d";
+}
+.softbd-hammer:before {
+  content: "\6e";
+}
+.softbd-images:before {
+  content: "\69";
+}
+.softbd-categories:before {
+  content: "\6a";
+}
+.softbd-group:before {
+  content: "\6b";
+}
+.softbd-plus:before {
+  content: "\72";
+}
+.softbd-person:before {
+  content: "\73";
+}
+.softbd-people:before {
+  content: "\74";
+}
+.softbd-power:before {
+  content: "\75";
+}
+.softbd-tools:before {
+  content: "\76";
+}
+.softbd-anchor:before {
+  content: "\77";
+}
+.softbd-double-down:before {
+  content: "\78";
+}
+.softbd-double-up:before {
+  content: "\79";
+}
+.softbd-double-left:before {
+  content: "\7a";
+}
+.softbd-double-right:before {
+  content: "\41";
+}
+.softbd-window-list:before {
+  content: "\42";
+}
+.softbd-x:before {
+  content: "\43";
+}
+.softbd-dot:before {
+  content: "\44";
+}
+.softbd-dot-2:before {
+  content: "\45";
+}
+.softbd-dot-3:before {
+  content: "\46";
+}
+.softbd-list:before {
+  content: "\47";
+}
+.softbd-list-add:before {
+  content: "\48";
+}
+.softbd-pie-chart:before {
+  content: "\49";
+}
+.softbd-watch:before {
+  content: "\4a";
+}
+.softbd-data:before {
+  content: "\4b";
+}
+.softbd-music:before {
+  content: "\4c";
+}
+.softbd-settings:before {
+  content: "\4e";
+}
+.softbd-video:before {
+  content: "\4f";
+}
+.softbd-trash:before {
+  content: "\50";
+}
+.softbd-tv:before {
+  content: "\51";
+}
+.softbd-lock:before {
+  content: "\52";
+}
+.softbd-news:before {
+  content: "\4d";
+}
+.softbd-bag:before {
+  content: "\53";
+}
+.softbd-upload:before {
+  content: "\54";
+}
+.softbd-refresh:before {
+  content: "\55";
+}
+.softbd-character:before {
+  content: "\57";
+}
+.softbd-move:before {
+  content: "\58";
+}
+.softbd-paypal:before {
+  content: "\56";
+}
+.softbd-paper-plane:before {
+  content: "\59";
+}
+.softbd-ticket:before {
+  content: "\5a";
+}
+.softbd-youtube-play:before {
+  content: "\30";
+}
+.softbd-boat:before {
+  content: "\31";
+}
+.softbd-check:before {
+  content: "\6c";
+}
+.softbd-alarm-clock:before {
+  content: "\32";
+}
+.softbd-controller:before {
+  content: "\34";
+}
+.softbd-pizza:before {
+  content: "\35";
+}
+.softbd-backpack:before {
+  content: "\36";
+}
+.softbd-barbeque:before {
+  content: "\37";
+}
+.softbd-bomb:before {
+  content: "\38";
+}
+.softbd-book-download:before {
+  content: "\39";
+}
+.softbd-browser:before {
+  content: "\21";
+}
+.softbd-brush:before {
+  content: "\22";
+}
+.softbd-bubble-hear:before {
+  content: "\23";
+}
+.softbd-polaroid:before {
+  content: "\24";
+}
+.softbd-crop:before {
+  content: "\26";
+}
+.softbd-dashboard:before {
+  content: "\27";
+}
+.softbd-hotdog:before {
+  content: "\28";
+}
+.softbd-laptop:before {
+  content: "\29";
+}
+.softbd-paint-bucket:before {
+  content: "\2c";
+}
+.softbd-photo:before {
+  content: "\2d";
+}
+.softbd-photos:before {
+  content: "\2e";
+}
+.softbd-receipt:before {
+  content: "\2f";
+}
+.softbd-buy:before {
+  content: "\3a";
+}
+.softbd-lightbulb:before {
+  content: "\3b";
+}
+.softbd-archive:before {
+  content: "\3f";
+}
+.softbd-paperclip:before {
+  content: "\40";
+}
+.softbd-warning:before {
+  content: "\5b";
+}
+.softbd-basket:before {
+  content: "\5d";
+}
+.softbd-bell:before {
+  content: "\5e";
+}
+.softbd-book:before {
+  content: "\5f";
+}
+.softbd-chat:before {
+  content: "\60";
+}
+.softbd-down-circled:before {
+  content: "\7b";
+}
+.softbd-location:before {
+  content: "\7d";
+}
+.softbd-forward:before {
+  content: "\7e";
+}
+.softbd-flashlight:before {
+  content: "\5c";
+}
+.softbd-trophy:before {
+  content: "\e001";
+}
+.softbd-diamond:before {
+  content: "\e002";
+}
+.softbd-credit-cards:before {
+  content: "\e003";
+}
+.softbd-shop:before {
+  content: "\e004";
+}
+.softbd-sound:before {
+  content: "\e005";
+}
+.softbd-study:before {
+  content: "\e006";
+}
+.softbd-pen:before {
+  content: "\e007";
+}
+.softbd-params:before {
+  content: "\e008";
+}
+.softbd-fire:before {
+  content: "\e009";
+}
+.softbd-dollar:before {
+  content: "\e00a";
+}
+.softbd-bulb:before {
+  content: "\e00b";
+}
+.softbd-lab:before {
+  content: "\e00c";
+}
+.softbd-cup:before {
+  content: "\e00d";
+}
+.softbd-megaphone:before {
+  content: "\e00e";
+}
+.softbd-heart:before {
+  content: "\e00f";
+}
+.softbd-bubble:before {
+  content: "\e011";
+}
+.softbd-search:before {
+  content: "\e012";
+}
+.softbd-tag:before {
+  content: "\e013";
+}
+.softbd-world:before {
+  content: "\25";
+}
+.softbd-camera:before {
+  content: "\2a";
+}
+.softbd-calendar:before {
+  content: "\7c";
+}
+.softbd-mail:before {
+  content: "\e014";
+}
+.softbd-phone:before {
+  content: "\e015";
+}
+.softbd-star:before {
+  content: "\e016";
+}
+.softbd-star-half:before {
+  content: "\e017";
+}
+.softbd-star-half-1:before {
+  content: "\e018";
+}
+.softbd-star-two:before {
+  content: "\e019";
+}
+.softbd-medal-rank-star:before {
+  content: "\e01a";
+}
+.softbd-facebook:before {
+  content: "\e01b";
+}
+.softbd-google-plus:before {
+  content: "\e01c";
+}
+.softbd-twitter:before {
+  content: "\e01d";
+}
+.softbd-github:before {
+  content: "\e01e";
+}
+.softbd-code:before {
+  content: "\e01f";
+}
+.softbd-pie-graph:before {
+  content: "\e020";
+}
+.softbd-javascript:before {
+  content: "\e021";
+}
+.softbd-wand:before {
+  content: "\e022";
+}
+.softbd-wineglass:before {
+  content: "\e023";
+}
+.softbd-milestone:before {
+  content: "\e024";
+}
+.softbd-terminal:before {
+  content: "\e025";
+}
+.softbd-plug:before {
+  content: "\e026";
+}
+.softbd-gift:before {
+  content: "\e027";
+}
+.softbd-markdown:before {
+  content: "\e028";
+}
+.softbd-beer:before {
+  content: "\e029";
+}
+.softbd-credit-card:before {
+  content: "\e02a";
+}
+.softbd-bolt:before {
+  content: "\e02b";
+}
+.softbd-external:before {
+  content: "\e02c";
+}
+.softbd-magnet:before {
+  content: "\e02d";
+}
+.softbd-certificate:before {
+  content: "\e02e";
+}
+.softbd-cloud-download:before {
+  content: "\e02f";
+}
+.softbd-campfire:before {
+  content: "\e030";
+}
+.softbd-new:before {
+  content: "\e031";
+}
+.softbd-skull:before {
+  content: "\e032";
+}
+.softbd-telephone:before {
+  content: "\e033";
+}
+.softbd-trees:before {
+  content: "\e034";
+}
+.softbd-bar-chart:before {
+  content: "\e035";
+}
+.softbd-check-circle:before {
+  content: "\e036";
+}
+.softbd-exclamation:before {
+  content: "\e037";
+}
+.softbd-font:before {
+  content: "\e03a";
+}
+.softbd-puzzle:before {
+  content: "\e03b";
+}
+.softbd-smile:before {
+  content: "\e03c";
+}
+.softbd-frown:before {
+  content: "\e03d";
+}
+.softbd-meh:before {
+  content: "\e03e";
+}
+.softbd-leaf:before {
+  content: "\e03f";
+}
+.softbd-info-circled:before {
+  content: "\e040";
+}
+.softbd-underline:before {
+  content: "\e041";
+}
+.softbd-wallet:before {
+  content: "\e042";
+}
+.softbd-truck:before {
+  content: "\e043";
+}
+.softbd-eye:before {
+  content: "\e044";
+}
+.softbd-sun:before {
+  content: "\e045";
+}
+.softbd-barbell:before {
+  content: "\e04a";
+}
+.softbd-bookmark:before {
+  content: "\e04c";
+}
+.softbd-volume-up:before {
+  content: "\e04d";
+}
+.softbd-volume-down:before {
+  content: "\e04e";
+}
+.softbd-wifi:before {
+  content: "\e04f";
+}
+.softbd-pause:before {
+  content: "\e053";
+}
+.softbd-resize-full:before {
+  content: "\e054";
+}
+.softbd-resize-small:before {
+  content: "\e055";
+}
+.softbd-download:before {
+  content: "\e056";
+}
+.softbd-droplet:before {
+  content: "\e057";
+}
+.softbd-umbrella:before {
+  content: "\e058";
+}
+.softbd-harddrive:before {
+  content: "\e059";
+}
+.softbd-css3:before {
+  content: "\e05a";
+}
+.softbd-html5:before {
+  content: "\e05b";
+}
+.softbd-tree:before {
+  content: "\e05e";
+}
+.softbd-file-code:before {
+  content: "\e061";
+}
+.softbd-bug:before {
+  content: "\e062";
+}
+.softbd-rocket:before {
+  content: "\e063";
+}
+.softbd-key:before {
+  content: "\33";
+}
+.softbd-question:before {
+  content: "\2b";
+}
+.softbd-cursor:before {
+  content: "\3c";
+}
+.softbd-lifebuoy:before {
+  content: "\3d";
+}
+.softbd-thumbs-up:before {
+  content: "\3e";
+}
+.softbd-thumb-tack:before {
+  content: "\e000";
+}
+.softbd-edit:before {
+  content: "\e010";
+}
+.softbd-angle-down:before {
+  content: "\e038";
+}
+.softbd-angle-left:before {
+  content: "\e039";
+}
+.softbd-angle-right:before {
+  content: "\e046";
+}
+.softbd-angle-up:before {
+  content: "\e047";
+}
+.softbd-home:before {
+  content: "\e048";
+}
+.softbd-pirate-swords:before {
+  content: "\e04b";
+}
+.softbd-pirate:before {
+  content: "\e050";
+}
+.softbd-rum:before {
+  content: "\e051";
+}
+.softbd-cannon:before {
+  content: "\e049";
+}
+.softbd-hook:before {
+  content: "\e052";
+}
+.softbd-kraken:before {
+  content: "\e05c";
+}
+.softbd-lighthouse:before {
+  content: "\e05d";
+}
+.softbd-pirate-hat:before {
+  content: "\e05f";
+}
+.softbd-rum-1:before {
+  content: "\e060";
+}
+.softbd-ship:before {
+  content: "\e064";
+}
+.softbd-treasure:before {
+  content: "\e065";
+}
+.softbd-treasure-open:before {
+  content: "\e066";
+}
+.softbd-whale:before {
+  content: "\e067";
+}
