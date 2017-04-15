@@ -2,7 +2,7 @@
     "name": "sbd/softbd",
     "description": "A Laravel Admin Package for The Control Group to make your life easier and steer your project in the right direction",
     "keywords": ["laravel", "admin", "panel"],
-    "license": "Apache License 2.0",
+    "license": "Apache-2.0",
     "homepage": "https://softbd.github.io/softwarebd/",
     "support": {
         "issues": "https://github.com/softwarebd/softbd/issues",
