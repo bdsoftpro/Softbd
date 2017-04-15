@@ -1,6 +1,6 @@
 {
     "name": "sbd/softbd",
-    "description": "A Laravel Admin Package for The Control Group to make your life easier and steer your project in the right direction",
+    "description": "A Laravel Admin Package for Software Bangladesh to make your life easier and steer your project in the right direction",
     "keywords": ["laravel", "admin", "panel"],
     "license": "Apache-2.0",
     "homepage": "https://softbd.github.io/softwarebd/",
@@ -10,7 +10,7 @@
     },
     "authors": [
         {
-            "name": "Md Shahanur Rahma",
+            "name": "Md Shahanur Rahman",
             "email": "delwar0cse@gmail.com"
         }
     ],

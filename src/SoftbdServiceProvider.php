@@ -84,10 +84,6 @@ class SoftbdServiceProvider extends ServiceProvider
 
         $this->registerViewComposers();
 
-        $event->listen('softbd.alerts.collecting', function () {
-            $this->addStorageSymlinkAlert();
-        });
-
         $this->bootTranslatorCollectionMacros();
     }
 
@@ -110,51 +106,6 @@ class SoftbdServiceProvider extends ServiceProvider
         View::composer('softbd::*', function ($view) {
             $view->with('alerts', SoftbdFacade::alerts());
         });
-    }
-
-    /**
-     * Add storage symlink alert.
-     */
-    protected function addStorageSymlinkAlert()
-    {
-        if (app('router')->current() !== null) {
-            $currentRouteAction = app('router')->current()->getAction();
-        } else {
-            $currentRouteAction = null;
-        }
-        $routeName = is_array($currentRouteAction) ? array_get($currentRouteAction, 'as') : null;
-
-        if ($routeName != 'softbd.dashboard') {
-            return;
-        }
-
-        if (request()->has('fix-missing-storage-symlink') && !file_exists(public_path('storage'))) {
-            $this->fixMissingStorageSymlink();
-        } elseif (!file_exists(public_path('storage'))) {
-            $alert = (new Alert('missing-storage-symlink', 'warning'))
-                ->title('Missing storage symlink')
-                ->text('We could not find a storage symlink. This could cause problems with loading media files from the browser.')
-                ->button('Fix it', '?fix-missing-storage-symlink=1');
-
-            SoftbdFacade::addAlert($alert);
-        }
-    }
-
-    protected function fixMissingStorageSymlink()
-    {
-        app('files')->link(base_path('uploads'), public_path('storage'));
-
-        if (file_exists(public_path('storage'))) {
-            $alert = (new Alert('fixed-missing-storage-symlink', 'success'))
-                ->title('Missing storage symlink created')
-                ->text('We just created the missing symlink for you.');
-        } else {
-            $alert = (new Alert('failed-fixing-missing-storage-symlink', 'danger'))
-                ->title('Could not create missing storage symlink')
-                ->text('We failed to generate the missing symlink for your application. It seems like your hosting provider does not support it.');
-        }
-
-        SoftbdFacade::addAlert($alert);
     }
 
     /**
