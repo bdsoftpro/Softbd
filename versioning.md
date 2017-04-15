@@ -1,6 +1,6 @@
 # Version of Softbd
 
-The current version of Voyager is alpha, and can therefor not be garanteed to be stable.
+The current version of Softbd is alpha, and can therefor not be garanteed to be stable.
 However we try to keep any breaking changes from the build releases.
 Instead we move breaking changes to a minor release instead.
 Once a new minor version have been released, migrations will be made in order for people to migrate from the older versions.
